@@ -1,12 +1,26 @@
 import React from 'react'
+import NavbarDark from './components/Nav'
+import Hero from './components/Hero'
+import Accordion from './components/Accordion'
+import ChatBubble from './components/ChatBubble'
+import Collapse from './components/Collapse'
+import Carousel from './components/Carousel'
+import Cardy from './components/Cardy'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
-      <div className='bg-purple-500'>
-        <h1 className='text-3xl font-bold underline'>Olare Ooô</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo unde maiores quod harum ea id sed odio dolore sint nostrum laudantium facilis modi rem reiciendis, non recusandae deserunt magni dicta.</p>
-      </div>
+        <NavbarDark />
+        <Hero />
+        <Accordion />
+        <ChatBubble />
+        <Collapse />
+        <Carousel />
+        <div className="flex flex-col items-center md:flex-row md:justify-center md:space-x-5 space-y-5">
+        <Cardy /><Cardy /> <Cardy />
+        </div>
+        <Footer />
     </>
   )
 }
